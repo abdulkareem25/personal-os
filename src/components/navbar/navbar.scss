@@ -1,0 +1,25 @@
+nav {
+    padding: 0.5rem 1rem;
+    background-color: rgba(63, 63, 63, 0.395);
+    backdrop-filter: blur(0.2rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    .left {
+        font-weight: 600;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+
+        img {
+            object-fit: contain;
+            height: 1rem;
+            width: 1rem;
+        }
+    }
+}
