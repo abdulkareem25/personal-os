@@ -17,20 +17,19 @@ const DateTime = () => {
       weekday: 'short',
       month: 'short',
       day: 'numeric'
-    })
+    }).replace(',', '')
   }
 
   const formatTime = (date) => {
     return date.toLocaleTimeString('en-US', {
       hour: '2-digit',
       minute: '2-digit',
-      second: '2-digit',
       hour12: true
     })
   }
 
   return (
-      <div className="datetime">{formatDate(dateTime)} {formatTime(dateTime)}</div>
+    <div className="datetime"> <div className="line"></div> {formatDate(dateTime)} <div className="line"></div> {formatTime(dateTime)}</div>
   )
 }
 
