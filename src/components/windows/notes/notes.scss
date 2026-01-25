@@ -1,0 +1,154 @@
+.notes-window {
+    display: flex;
+    height: 100%;
+    color: #e6e6e8;
+    overflow: hidden;
+}
+
+.notes-sidebar {
+    width: 340px;
+    background: #242426;
+    border-right: 1px solid #333;
+    border-radius: 12px 0 0 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.notes-top {
+    padding: 12px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    border-bottom: 1px solid #262628;
+}
+
+.search-btn {
+    background: #2b2b2f;
+    color: #fff;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.search {
+    flex: 1;
+    background: #151517;
+    border: 1px solid #2b2b2f;
+    padding: 8px 10px;
+    border-radius: 8px;
+    color: #ddd;
+}
+
+.notes-list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.note-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    cursor: pointer;
+    gap: 8px;
+    border-bottom: 1px solid #171718;
+}
+
+.note-item:hover {
+    background: #232326;
+}
+
+.note-item.active {
+    background: linear-gradient(90deg, rgba(45, 55, 255, 0.12), rgba(45, 55, 255, 0.06));
+}
+
+.note-left {
+    max-width: 220px;
+    overflow: hidden;
+}
+
+.note-title {
+    font-weight: 700;
+    font-size: 13px;
+    color: #fff;
+}
+
+.note-snippet {
+    font-size: 12px;
+    color: #a9a9ab;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.note-right {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.icon-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #bbb;
+}
+
+.empty {
+    padding: 20px;
+    color: #8b8b8d;
+}
+
+/* Editor */
+.notes-editor {
+    flex: 1;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    background: #121212;
+    border-radius: 0 12px 12px 0;
+}
+
+.empty-preview {
+    color: #8b8b8d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.editor-wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.note-title-input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 6px 0;
+}
+
+.note-body {
+    flex: 1;
+    margin-top: 10px;
+    background: transparent;
+    border: none;
+    color: #e6e6e8;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 8px 0;
+    resize: none;
+}
+
+.editor-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    color: #9a9a9c;
+    font-size: 12px;
+}
