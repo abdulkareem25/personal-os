@@ -5,6 +5,7 @@ import Mail from './components/windows/mail/Mail'
 import Github from './components/windows/github/Github'
 import Notes from './components/windows/notes/notes'
 import PdfViewer from './components/windows/pdf/Pdf'
+import Cli from './components/windows/cli/Cli'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Notes />
       <Mail />
       <PdfViewer />
+      <Cli />
 
       <Footer />
     </main>

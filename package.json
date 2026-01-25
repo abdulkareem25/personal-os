@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@babel/runtime": "^7.28.6",
     "react": "^19.0.0",
+    "react-console-emulator": "^5.0.2",
     "react-dom": "^19.0.0",
     "react-rnd": "^10.5.2",
     "sass": "^1.97.2"
