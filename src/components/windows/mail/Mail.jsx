@@ -16,9 +16,9 @@ const Mail = () => {
   const activeMail = mails.find(m => m.id === activeId);
 
   return (
-    <MacWindow title="Mail" logo="/doc-icons/mail.svg">
+    <MacWindow name="mail" title="Mail" logo="/doc-icons/mail.svg">
       <div className="mail-window">
-        {/* LEFT SIDEBAR */}
+
         <div className="mail-sidebar">
           <div className="mail-header">Inbox</div>
 
@@ -39,7 +39,6 @@ const Mail = () => {
           </div>
         </div>
 
-        {/* RIGHT PREVIEW */}
         <div className="mail-preview">
           <div className="preview-header">
             <h3>{activeMail.subject}</h3>

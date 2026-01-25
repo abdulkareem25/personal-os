@@ -1,7 +1,19 @@
 import { Rnd } from 'react-rnd'
 import './macwindow.scss'
+import { useContext } from 'react';
+import { StateContext } from '../../../context/StateProvider';
 
-const MacWindow = ({ title, logo, children }) => {
+const MacWindow = ({ name, title, logo, children }) => {
+
+    const [initialState, setInitialState] = useContext(StateContext);
+
+    const handleClick = () => {
+        setInitialState({
+            ...initialState,
+            [name]: false,
+        });
+    };
+
     return (
         <Rnd
             default={{
@@ -20,9 +32,19 @@ const MacWindow = ({ title, logo, children }) => {
                     <div className="icon"><img src={logo} alt={title} /></div>
                     <div className="title">{title}</div>
                     <div className="btns">
-                        <div className="btn maximize"></div>
-                        <div className="btn minimize"></div>
-                        <div className="btn close"></div>
+                        <div
+                            title='Maximize'
+                            className="btn maximize">
+                        </div>
+                        <div
+                            title='Minimize'
+                            className="btn minimize">
+                        </div>
+                        <div
+                            title="Close"
+                            onClick={handleClick}
+                            className="btn close">
+                        </div>
                     </div>
                 </div>
                 <div className="content">

@@ -86,7 +86,7 @@ export default function Notes() {
     const active = notes.find(n => n.id === activeId) || null;
 
     return (
-        <MacWindow title="Notes" logo="/doc-icons/notes.svg">
+        <MacWindow name="notes" title="Notes" logo="/doc-icons/notes.svg">
             <div className="notes-window">
                 <div className="notes-sidebar">
                     <div className="notes-top">

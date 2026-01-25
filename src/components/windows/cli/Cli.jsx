@@ -41,7 +41,7 @@ const Cli = () => {
     };
 
     return (
-        <MacWindow title="Command Line Interface" logo="/doc-icons/cli.svg">
+        <MacWindow name="cli" title="Command Line Interface" logo="/doc-icons/cli.svg">
             <Terminal
                 welcomeMessage={
                     `👋 Welcome to Abdulkareem's CLI Portfolio\n` +

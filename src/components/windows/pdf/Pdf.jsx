@@ -13,7 +13,7 @@ const PdfViewer = () => {
   };
 
   return (
-    <MacWindow title="PDF Viewer" logo="/doc-icons/pdf.svg">
+    <MacWindow name="pdf" title="PDF Viewer" logo="/doc-icons/pdf.svg">
       <div className="pdf-window">
         {!fileUrl && (
           <div className="pdf-center">
