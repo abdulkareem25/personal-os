@@ -6,17 +6,22 @@ import Github from './components/windows/github/Github'
 import Notes from './components/windows/notes/notes'
 import PdfViewer from './components/windows/pdf/Pdf'
 import Cli from './components/windows/cli/Cli'
+import { StateContext } from './context/StateProvider'
+import { useContext } from 'react'
 
 const App = () => {
+
+  const [initialState] = useContext(StateContext);
+
   return (
     <main>
       <Navbar />
 
-      <Github />
-      <Notes />
-      <Mail />
-      <PdfViewer />
-      <Cli />
+      {initialState.github && <Github /> }
+      {initialState.notes && <Notes />}
+      {initialState.mail && <Mail />}
+      {initialState.pdf && <PdfViewer />}
+      {initialState.cli && <Cli />}
 
       <Footer />
     </main>
