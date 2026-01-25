@@ -1,0 +1,96 @@
+.mail-window {
+  display: flex;
+  height: 100%;
+  background: #1c1c1e;
+  color: #e5e5e7;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.mail-sidebar {
+  width: 300px;
+  background: #242426;
+  border-right: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.mail-header {
+  padding: 14px 16px;
+  font-weight: 600;
+  font-size: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.mail-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.mail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.mail-item:hover {
+  background: #2f2f32;
+}
+
+.mail-item.active {
+  background: #2a4cff;
+}
+
+.mail-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mail-from {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.mail-subject {
+  font-size: 12px;
+  color: #bdbdbd;
+}
+
+.mail-time {
+  font-size: 11px;
+  color: #aaa;
+}
+
+/* Preview Panel */
+.mail-preview {
+  flex: 1;
+  background: #1b1b1d;
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-header {
+  border-bottom: 1px solid #333;
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+}
+
+.preview-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.preview-header span {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.preview-body {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ddd;
+}
