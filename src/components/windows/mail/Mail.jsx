@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './mail.scss';
-import MacWindow from '../macwindow/MacWindow';
+import MacWindow from '../../macwindow/MacWindow';
 
 const mails = [
   { id: 1, from: 'Rina Patel', subject: 'Design review', time: '10:30 AM', body: 'Hey, can you check the new design update I pushed this morning?' },

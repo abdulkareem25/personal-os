@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './pdf.scss';
-import MacWindow from '../macwindow/MacWindow';
+import MacWindow from '../../macwindow/MacWindow';
 
 const PdfViewer = () => {
   const [fileUrl, setFileUrl] = useState(null);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './notes.scss';
-import MacWindow from '../macwindow/MacWindow';
+import MacWindow from '../../macwindow/MacWindow';
 
 const STORAGE_KEY = 'simple_notes_v1';
 

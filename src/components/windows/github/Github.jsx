@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import MacWindow from '../macwindow/MacWindow';
+import MacWindow from '../../macwindow/MacWindow';
 import './github.scss';
 
 const Github = () => {

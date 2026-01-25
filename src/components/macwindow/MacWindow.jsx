@@ -1,7 +1,7 @@
 import { Rnd } from 'react-rnd'
 import './macwindow.scss'
 import { useContext } from 'react';
-import { StateContext } from '../../../context/StateProvider';
+import { StateContext } from '../../context/StateProvider';
 
 const MacWindow = ({ name, title, logo, children }) => {
 
