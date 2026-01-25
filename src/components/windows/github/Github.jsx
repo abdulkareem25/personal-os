@@ -60,7 +60,7 @@ const Github = () => {
     }, []);
 
     return (
-        <MacWindow title={'Github'}>
+        <MacWindow title={'Github'} logo={'/doc-icons/github.svg'}>
             <div className="github-window">
                 {loading && <p className="github-loading">Loading profile...</p>}
                 {error && <p className="github-error">Error: {error}</p>}

@@ -1,7 +1,7 @@
 import { Rnd } from 'react-rnd'
 import './macwindow.scss'
 
-const MacWindow = ({ title, children }) => {
+const MacWindow = ({ title, logo, children }) => {
     return (
         <Rnd
             default={{
@@ -17,6 +17,7 @@ const MacWindow = ({ title, children }) => {
         >
             <div className="mac-window">
                 <div className="title-bar">
+                    <div className="icon"><img src={logo} alt={title} /></div>
                     <div className="title">{title}</div>
                     <div className="btns">
                         <div className="btn maximize"></div>
