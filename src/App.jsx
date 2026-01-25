@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbar'
 import Mail from './components/windows/mail/Mail'
 import Github from './components/windows/github/Github'
 import Notes from './components/windows/notes/notes'
+import PdfViewer from './components/windows/pdf/Pdf'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Github />
       <Notes />
       <Mail />
+      <PdfViewer />
 
       <Footer />
     </main>
