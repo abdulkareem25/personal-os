@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './youtube.scss';
-import MacWindow from '../../MacWindow/MacWindow';
+import MacWindow from '../../macwindow/MacWindow';
 
 const Youtube = () => {
   const [playing, setPlaying] = useState(false);
