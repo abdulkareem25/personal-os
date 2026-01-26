@@ -1,6 +1,7 @@
 import './app.scss'
 import Footer from './components/footer/Footer'
 import Navbar from './components/navbar/Navbar'
+import Youtube from './components/windows/youtube/Youtube'
 import Mail from './components/windows/mail/Mail'
 import Github from './components/windows/github/Github'
 import Notes from './components/windows/notes/notes'
@@ -17,6 +18,7 @@ const App = () => {
     <main>
       <Navbar />
 
+      {initialState.youtube && <Youtube /> }
       {initialState.github && <Github /> }
       {initialState.notes && <Notes />}
       {initialState.mail && <Mail />}
