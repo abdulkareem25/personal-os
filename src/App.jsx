@@ -6,6 +6,7 @@ import Youtube from './components/windows/youtube/Youtube'
 import Mail from './components/windows/mail/Mail'
 import Github from './components/windows/github/Github'
 import Discord from './components/windows/discord/Discord'
+import Whatsapp from './components/windows/whatsapp/WhatsApp'
 import Notes from './components/windows/notes/notes'
 import PdfViewer from './components/windows/pdf/Pdf'
 import Cli from './components/windows/cli/Cli'
@@ -24,6 +25,7 @@ const App = () => {
       {initialState.youtube && <Youtube /> }
       {initialState.github && <Github /> }
       {initialState.discord && <Discord />}
+      {initialState.whatsapp && <Whatsapp />}
       {initialState.notes && <Notes />}
       {initialState.mail && <Mail />}
       {initialState.pdf && <PdfViewer />}
