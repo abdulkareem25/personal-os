@@ -1,6 +1,7 @@
 import './app.scss'
 import Footer from './components/footer/Footer'
 import Navbar from './components/navbar/Navbar'
+import Sheryians from './components/windows/sheryians/Sheryians'
 import Youtube from './components/windows/youtube/Youtube'
 import Mail from './components/windows/mail/Mail'
 import Github from './components/windows/github/Github'
@@ -19,6 +20,7 @@ const App = () => {
     <main>
       <Navbar />
 
+      {initialState.sheryians && <Sheryians /> }
       {initialState.youtube && <Youtube /> }
       {initialState.github && <Github /> }
       {initialState.discord && <Discord />}

@@ -1,0 +1,27 @@
+.sheryians {
+    height: 100%;
+    background: #1c1c1e;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.course-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+}
+
+.course {
+    background: #2a2a2e;
+    padding: 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.course:hover {
+    background: #35353a;
+}

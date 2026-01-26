@@ -3,7 +3,7 @@ import MacWindow from '../../macwindow/MacWindow';
 
 const Discord = () => {
   return (
-    <MacWindow title="Discord" logo="/doc-icons/discord.svg">
+    <MacWindow name="discord" title="Discord" logo="/doc-icons/discord.svg">
       <div className="discord">
         <div className="discord-servers">
           <div className="server">🔥</div>
