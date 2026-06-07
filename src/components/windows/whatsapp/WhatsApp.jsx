@@ -3,7 +3,7 @@ import MacWindow from '../../macwindow/MacWindow';
 
 const chats = ['Aman', 'Rohit', 'Design Team', 'Family', 'College Group'];
 
-const Whatsapp = () => {
+const WhatsApp = () => {
   return (
     <MacWindow name="whatsapp" title="WhatsApp" logo="/doc-icons/whatsapp.svg">
       <div className="whatsapp">
@@ -22,4 +22,4 @@ const Whatsapp = () => {
   );
 };
 
-export default Whatsapp;
+export default WhatsApp;
