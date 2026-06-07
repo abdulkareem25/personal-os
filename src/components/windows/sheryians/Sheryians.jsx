@@ -3,7 +3,7 @@ import MacWindow from '../../macwindow/MacWindow';
 
 const Sheryians = () => {
   return (
-    <MacWindow name="sheryians" title="Sheryians" logo="/doc-icons/sheryians.svg">
+    <MacWindow name="sheryians" title="Sheryians" logo={`${import.meta.env.BASE_URL}doc-icons/sheryians.svg`}>
       <div className="sheryians">
         <h1>Welcome to Sheryians</h1>
         <p>Learn Web Development, DSA & Real Projects</p>

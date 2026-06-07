@@ -13,7 +13,7 @@ const PdfViewer = () => {
   };
 
   return (
-    <MacWindow name="pdf" title="PDF Viewer" logo="/doc-icons/pdf.svg">
+    <MacWindow name="pdf" title="PDF Viewer" logo={`${import.meta.env.BASE_URL}doc-icons/pdf.svg`}>
       <div className="pdf-window">
         {!fileUrl && (
           <div className="pdf-center">

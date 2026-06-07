@@ -16,7 +16,7 @@ const Mail = () => {
   const activeMail = mails.find(m => m.id === activeId);
 
   return (
-    <MacWindow name="mail" title="Mail" logo="/doc-icons/mail.svg">
+    <MacWindow name="mail" title="Mail" logo={`${import.meta.env.BASE_URL}doc-icons/mail.svg`}>
       <div className="mail-window">
 
         <div className="mail-sidebar">

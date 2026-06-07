@@ -5,7 +5,7 @@ const chats = ['Aman', 'Rohit', 'Design Team', 'Family', 'College Group'];
 
 const WhatsApp = () => {
   return (
-    <MacWindow name="whatsapp" title="WhatsApp" logo="/doc-icons/whatsapp.svg">
+    <MacWindow name="whatsapp" title="WhatsApp" logo={`${import.meta.env.BASE_URL}doc-icons/whatsapp.svg`}>
       <div className="whatsapp">
         <div className="wa-sidebar">
           {chats.map((c, i) => (

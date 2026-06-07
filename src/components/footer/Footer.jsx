@@ -18,47 +18,47 @@ const Footer = () => {
             <div
                 onClick={handleClick}
                 className="icon sheryians">
-                <img src="/doc-icons/sheryians.svg" alt="Sheryians icon" />
+                <img src={`${import.meta.env.BASE_URL}doc-icons/sheryians.svg`} alt="Sheryians icon" />
             </div>
             <div
                 onClick={handleClick}
                 className="icon youtube">
-                <img src="/doc-icons/youtube.svg" alt="Youtube icon" />
+                <img src={`${import.meta.env.BASE_URL}doc-icons/youtube.svg`} alt="Youtube icon" />
             </div>
             <div
                 onClick={handleClick}
                 className="icon github">
-                <img src="/doc-icons/github.svg" alt="Github icon" />
+                <img src={`${import.meta.env.BASE_URL}doc-icons/github.svg`} alt="Github icon" />
             </div>
             <div
                 onClick={handleClick}
                 className="icon discord">
-                <img src="/doc-icons/discord.svg" alt="Discord icon" />
+                <img src={`${import.meta.env.BASE_URL}doc-icons/discord.svg`} alt="Discord icon" />
             </div>
             <div
                 onClick={handleClick}
                 className="icon whatsapp">
-                <img src="/doc-icons/whatsapp.svg" alt="Whatsapp icon" />
+                <img src={`${import.meta.env.BASE_URL}doc-icons/whatsapp.svg`} alt="Whatsapp icon" />
             </div>
             <div
                 onClick={handleClick}
                 className="icon notes">
-                <img src="/doc-icons/notes.svg" alt="Notes icon" />
+                <img src={`${import.meta.env.BASE_URL}doc-icons/notes.svg`} alt="Notes icon" />
             </div>
             <div
                 onClick={handleClick}
                 className="icon mail">
-                <img src="/doc-icons/mail.svg" alt="Mail icon" />
+                <img src={`${import.meta.env.BASE_URL}doc-icons/mail.svg`} alt="Mail icon" />
             </div>
             <div
                 onClick={handleClick}
                 className="icon pdf">
-                <img src="/doc-icons/pdf.svg" alt="Pdf icon" />
+                <img src={`${import.meta.env.BASE_URL}doc-icons/pdf.svg`} alt="Pdf icon" />
             </div>
             <div
                 onClick={handleClick}
                 className="icon cli">
-                <img src="/doc-icons/cli.svg" alt="Cli icon" />
+                <img src={`${import.meta.env.BASE_URL}doc-icons/cli.svg`} alt="Cli icon" />
             </div>
         </footer>
     )

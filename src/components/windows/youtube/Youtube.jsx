@@ -6,7 +6,7 @@ const Youtube = () => {
   const [playing, setPlaying] = useState(false);
 
   return (
-    <MacWindow name="youtube" title="YouTube" logo="/doc-icons/youtube.svg">
+    <MacWindow name="youtube" title="YouTube" logo={`${import.meta.env.BASE_URL}doc-icons/youtube.svg`}>
       <div className="yt-window">
         {!playing && (
           <div className="yt-center">
