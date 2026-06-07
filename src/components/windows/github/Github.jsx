@@ -8,55 +8,30 @@ const Github = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        const fetchGithubData = async () => {
-            try {
-                const query = `
-                    query {
-                        user(login: "abdulkareem25") {
-                            name
-                            login
-                            bio
-                            avatarUrl
-                            url
-                            repositories(first: 6, orderBy: {field: UPDATED_AT, direction: DESC}) {
-                                nodes {
-                                    name
-                                    description
-                                    url
-                                    primaryLanguage {
-                                        name
-                                    }
-                                    stargazerCount
-                                }
-                            }
-                        }
-                    }
-                `;
-
-                const response = await fetch('https://api.github.com/graphql', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Authorization': `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
-                    },
-                    body: JSON.stringify({ query })
-                });
-
-                const result = await response.json();
-                
-                if (result.errors) {
-                    throw new Error(result.errors[0].message);
+        const loadDummyData = () => {
+            const dummyData = {
+                name: "Abdul Kareem",
+                login: "abdulkareem25",
+                bio: "Full Stack Developer",
+                avatarUrl: "/doc-icons/github.svg",
+                url: "https://github.com/abdulkareem25",
+                repositories: {
+                    nodes: [
+                        { name: "Personal-OS", description: "A web-based OS portfolio", url: "https://github.com/abdulkareem25/personal-os", primaryLanguage: { name: "JavaScript" } },
+                        { name: "Awesome-Project", description: "A really cool open source project", url: "#", primaryLanguage: { name: "TypeScript" } },
+                        { name: "My-Portfolio", description: "Previous portfolio version", url: "#", primaryLanguage: { name: "React" } }
+                    ]
                 }
-                
-                setData(result.data.user);
-            } catch (err) {
-                setError(err.message);
-            } finally {
+            };
+            
+            // Simulate network delay
+            setTimeout(() => {
+                setData(dummyData);
                 setLoading(false);
-            }
+            }, 500);
         };
 
-        fetchGithubData();
+        loadDummyData();
     }, []);
 
     return (
